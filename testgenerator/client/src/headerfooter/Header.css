@@ -1,58 +1,124 @@
-/* src/components/Header.css */
+/* Global Reset for the Header */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* General Header Styles */
 header {
-    background-color: #282c34; /* Dark background for the header */
-    color: white; /* White text color */
-    padding: 20px; /* Padding for the header */
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .header-title {
-    text-align: center; /* Center the title */
-    margin-bottom: 10px; /* Space between title and navigation */
+    /* flex: 1; */
+    /* text-align: center; */
+    color: white;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
-.container5 {
-    max-width: 1200px; /* Limit the width of the header content */
-    margin: 0 auto; /* Center the container */
-    display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: 1fr auto; /* Two columns: logo and nav */
-    align-items: center; /* Center items vertically */
+.header-title h1 {
+    font-size: 32px;
+    margin: 0;
+
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    color: white;
 }
 
+/* Logo Styles */
 .logo {
-    display: flex; /* Use flexbox for logo */
-    align-items: center; /* Center items vertically */
+    flex: 0 0 80px;
+    text-align: center;
 }
 
 .header-icon {
-    width: 80px; /* Set a fixed width for the icon */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Space between the image and the title */
-    border-radius: 10px; /* Rounded corners for the icon */
+    width: 60px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Navigation Bar */
+.container5 {
+    flex: 2;
+    color: white;
 }
 
 nav {
-    display: flex; /* Use flexbox for navigation */
-    justify-content: flex-end; /* Align navigation to the right */
+    display: flex;
+    justify-content: center;
 }
 
-nav ul {
-    list-style: none; /* Remove default list styling */
-    display: flex; /* Use flexbox for the list */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav li {
-    margin: 0 15px; /* Space between navigation items */
+ul li {
+    position: relative;
 }
 
-nav a {
-    color: white; /* White text color for links */
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #61dafb; /* Change color on hover */
+ul li a:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-title h1 {
+        font-size: 28px;
+    }
+
+    .container5 {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* For very small screens (mobile devices) */
+@media (max-width: 480px) {
+    .header-title h1 {
+        font-size: 24px;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+    .header-icon {
+        width: 35px;
+        height: 35px;
+    }
 }

@@ -126,10 +126,7 @@ function App() {
 
     <><Header /><div>
       
-      <div className="projectinfo">
-        <h4>Summer Internship: JOVAC FULL STACK WEB DEVELOPMENT</h4>
-        <h4>Project 16: Customized test generator from notes</h4>
-      </div>
+     
       <div className="container2">
         <form onSubmit={(e) => e.preventDefault()}>
           <label htmlFor="noteInput">Upload your notes (text only):</label>

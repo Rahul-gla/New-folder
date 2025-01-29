@@ -26,6 +26,8 @@ const Test = () => {
     setError(null); // Reset error state before fetching
     try {
       const response = await axios.get('http://localhost:5000/api/questions');
+      console.log('Fetched questions:', response.data); // Log the response
+
       setQuestions(response.data);
     } catch (error) {
       console.error('Error fetching questions:', error);
@@ -34,6 +36,27 @@ const Test = () => {
       setLoading(false);
     }
   };
+
+
+//   const fetchQuestions = async () => {
+//     setLoading(true);
+//     setError(null); // Reset error state before fetching
+//     try {
+//         const response = await axios.get('http://localhost:5000/api/questions');
+//         console.log('Fetched questions:', response.data); // Log the response
+
+//         // Ensure the response is an array
+//         const responseData = Array.isArray(response.data) ? response.data : [];
+//         setQuestions(responseData);
+//     } catch (error) {
+//         console.error('Error fetching questions:', error);
+//         setError('Failed to fetch questions. Please try again later.');
+//     } finally {
+//         setLoading(false);
+//     }
+// };
+
+
 
   const handleAnswerChange = (index, value) => {
     setAnswers((prevAnswers) => ({ ...prevAnswers, [index]: value }));
@@ -73,7 +96,13 @@ const Test = () => {
           <button onClick={fetchQuestions}>Generate Test</button>
         </div>
       )}
-      {questions.length > 0 && (
+
+
+
+      {Array.isArray(questions)&&questions.length > 0 && (
+
+
+
         questions.map((q, index) => (
           <div key={index} className="question">
             <p>{index + 1}. {q.question}</p>

@@ -53,7 +53,7 @@ function Contact() {
           <h2>Team Member</h2>
           <p><strong>Name:</strong> Rahul</p>
           <p><strong>Address:</strong>Village-Gausana, Post-Lohvan, Mathura 281204</p>
-          <p><strong>Email:</strong> <a href="mailto:developer@example.com">rahul.gla2_cs23@gla.ac.in</a></p>
+          <p><strong>Email:</strong> <a href="mailto:rahul.gla2_cs23@gla.ac.in">rahul.gla2_cs23@gla.ac.in</a></p>
           <p><strong>Contact Number:</strong> +916397457320</p>
         </section>
 

@@ -17,13 +17,13 @@ const Footer = ({ currentYear }) => {
                     <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer">
                         <img src={emailIcon} alt="Email" className="social-icon" />
                     </a>
-                    <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Rahul-gla" target="_blank" rel="noopener noreferrer">
                         <img src={githubIcon} alt="GitHub" className="social-icon" />
                     </a>
-                    <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/rahul-kumar-03b20b27a/" target="_blank" rel="noopener noreferrer">
                         <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
                     </a>
-                    <a href="https://www.youtube.com/channel/your-youtube-channel" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
                         <img src={youtubeIcon} alt="YouTube" className="social-icon" />
                     </a>
                 </div>

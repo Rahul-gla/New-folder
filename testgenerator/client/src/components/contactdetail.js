@@ -36,8 +36,6 @@ const ContactDetail = () => {
 
     return (
         <><Header />
-        
-        
         <div className='main'>
             <h2>Contact Details</h2>
             {contacts.length === 0 ? (

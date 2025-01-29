@@ -1,85 +1,146 @@
-/* src/style/Features.css */
-
-body {
-  font-family: Arial, sans-serif; /* Use a clean, modern font */
+/* Global Styles */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; /* Light background color for contrast */
 }
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Container Styles */
 .container1 {
-  max-width: 50%; /* Limit the width of the main content */
-  margin: 20px auto; /* Center the content */
-  padding: 20px; /* Add padding around the content */
-  background-color: #ffffff; /* White background for the content area */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-h2 {
-  color: #333; /* Darker color for headings */
-  text-align: center; /* Center the heading */
-  margin-bottom: 20px; /* Space below the heading */
-}
-
+/* Test Creator Styles */
 #test-creator {
-  margin-bottom: 30px; /* Space below the test creator section */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#test-creator h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 #question-container {
   display: flex;
-  flex-direction: column; /* Stack inputs vertically */
-  gap: 10px; /* Space between inputs */
+  flex-direction: column;
+  gap: 10px;
 }
 
-input[type="text"],
-input[type="number"] {
-  padding: 10px; /* Padding inside input fields */
-  border: 1px solid #ccc; /* Light border */
-  border-radius: 4px; /* Rounded corners */
-  font-size: 16px; /* Font size for inputs */
+#question-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus {
-  border-color: #007bff; /* Change border color on focus */
-  outline: none; /* Remove default outline */
+#question-container input:focus {
+  outline: none;
+  border-color: #007BFF;
 }
 
-button {
-  padding: 10px 15px; /* Padding for buttons */
-  background-color: #007bff; /* Bootstrap primary color */
-  color: white; /* White text color */
-  border: none; /* Remove border */
-  border-radius: 4px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 16px; /* Font size for buttons */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+#question-container button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+#question-container button:hover {
+  background-color: #0056b3;
 }
 
+/* Test Preview Styles */
 #test-preview {
-  margin-top: 20px; /* Space above the test preview */
+  margin-top: 30px;
 }
 
-.question-item {
-  background-color: #f9f9f9; /* Light background for question items */
-  padding: 15px; /* Padding inside question items */
-  border-radius: 5px; /* Rounded corners */
-  margin-bottom: 10px; /* Space between question items */
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for question items */
+#test-preview .question-item {
+  margin-bottom: 15px;
 }
 
-input[type="radio"] {
-  margin-right: 10px; /* Space between radio button and label */
+.question-item strong {
+  font-weight: bold;
 }
 
+.question-item input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Submit Button */
+#test-preview button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#test-preview button:hover {
+  background-color: #218838;
+}
+
+/* Result Styles */
 #result {
-  margin-top: 20px; /* Space above the result */
-  font-size: 18px; /* Font size for result */
-  text-align: center; /* Center the result text */
-  color: #333; /* Dark color for result text */
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #question-container {
+    gap: 15px;
+  }
+
+  #question-container input, #question-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #test-creator {
+    padding: 15px;
+  }
+
+  #test-preview button {
+    width: 100%;
+  }
+}
+
+/* For Small Screens */
+@media (max-width: 480px) {
+  #test-creator h2 {
+    font-size: 20px;
+  }
+
+  #test-creator {
+    padding: 10px;
+  }
+
+  #question-container input, #question-container button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  #test-preview button {
+    padding: 10px;
+  }
 }

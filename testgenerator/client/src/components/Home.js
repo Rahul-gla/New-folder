@@ -52,7 +52,7 @@ function Home() {
         <section id="contact" className="contact">
           <div className="container">
             <h2>Contact Us</h2>
-            <p>If you have any questions or need support, feel free to <a href="mailto:rkx639849@gmail.com">email us</a>. We are here to help!</p>
+            <p>If you have any questions or need support, feel free to <a href="mailto:rahul.gla2_cs23@gla.ac.in">email us</a>. We are here to help!</p>
           </div>
         </section>
       </main>

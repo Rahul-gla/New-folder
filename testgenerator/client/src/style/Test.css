@@ -1,3 +1,16 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
 /* Container for the entire test */
 .test-container {
   padding: 20px;
@@ -9,7 +22,6 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-/* Heading style */
 .test-container h2 {
   text-align: center; /* Center the heading */
   color: #333; /* Darker text color */
@@ -37,13 +49,11 @@
   margin-left: 20px; /* Indent options */
 }
 
-/* Style for each option */
 .options div {
   margin-bottom: 10px; /* Space between options */
 }
 
-/* Style for radio buttons */
-input[type="radio"] {
+.options input[type="radio"] {
   margin-right: 10px; /* Space between radio button and label */
 }
 
@@ -59,4 +69,95 @@ input[type="radio"] {
   text-align: center; /* Center the loading message */
   font-size: 18px; /* Larger font size for loading message */
   color: #007BFF; /* Blue color for loading message */
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #0072ff;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Makes buttons take up full width */
+  max-width: 250px; /* Optional: limits button width */
+  margin: 20px auto;
+  display: block; /* Center the button */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#results {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#results h3 {
+  font-size: 1.3em;
+  color: #0072ff;
+}
+
+#results p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .test-container {
+    padding: 15px;
+    max-width: 90%; /* Ensure the test container takes up most of the screen width on smaller devices */
+  }
+
+  .question p {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  .options div {
+    font-size: 1em; /* Adjust option font size */
+  }
+
+  button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  #results h3 {
+    font-size: 1.2em;
+  }
+
+  #results p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .test-container {
+    padding: 10px;
+    max-width: 95%; /* Further reduce the container width */
+  }
+
+  .question p {
+    font-size: 1.1em; /* Smaller font size for mobile devices */
+  }
+
+  .options div {
+    font-size: 1em; /* Adjust option font size */
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 1em;
+  }
+
+  #results h3 {
+    font-size: 1em;
+  }
+
+  #results p {
+    font-size: 0.9em;
+  }
 }
