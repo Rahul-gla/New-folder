@@ -52,35 +52,14 @@ function Contact() {
         <section className="contact-info1">
           <h2>Team Member</h2>
           <p><strong>Name:</strong> Rahul</p>
-          <p><strong>Address:</strong>tower wali gali Village-Gausana, Mathura 281204</p>
+          <p><strong>Address:</strong>Village-Gausana, Post-Lohvan, Mathura 281204</p>
           <p><strong>Email:</strong> <a href="mailto:developer@example.com">rahul.gla2_cs23@gla.ac.in</a></p>
           <p><strong>Contact Number:</strong> +916397457320</p>
         </section>
 
-        <section className="contact-info1">
-          <h2>Team Member</h2>
-          <p><strong>Name:</strong> Dheeraj Gaur</p>
-          <p><strong>Address:</strong> 123 Developer Lane, Code City, DevState, 45678</p>
-          <p><strong>Email:</strong> <a href="mailto:developer@example.com">dheeraj.gaur_cs23@gla.ac.in</a></p>
-          <p><strong>Contact Number:</strong> +916397684456</p>
-        </section>
+        
 
-        <section className="contact-info1">
-          <h2>Team Member</h2>
-          <p><strong>Name:</strong> Neelesh Shakya</p>
-          <p><strong>Address:</strong> 123 Developer Lane, Code City, DevState, 45678</p>
-          <p><strong>Email:</strong> <a href="mailto:developer@example.com">neelesh.shakya_cs23@gla.ac.in</a></p>
-          <p><strong>Contact Number:</strong> +916397684456</p>
-        </section>
-
-        <section className="contact-info1">
-          <h2>Team Member</h2>
-          <p><strong>Name:</strong> Divesh Singh</p>
-          <p><strong>Address:</strong> 123 Developer Lane, Code City, DevState, 45678</p>
-          <p><strong>Email:</strong> <a href="mailto:developer@example.com">divesh.singh_cs23@gla.ac.in</a></p>
-          <p><strong>Contact Number:</strong> +916397684456</p>
-        </section>
-        {/* Other team members' sections */}
+       
         <section className="contact-form">
           <h2>Send Us a Message</h2>
           <form id="contactForm" onSubmit={handleSubmit}>
